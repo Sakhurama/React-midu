@@ -10,13 +10,17 @@ const Boton = ({texto}) => {
 
 createRoot(document.getElementById('root')).render(
   <>
-    <div style={{marginBottom: '50px'}}>
+    <div
+      className='hidden'
+      style={{marginBottom: '50px'}}
+    >
       <button>boton 1</button>
       <button>boton 1</button>
       <button>boton 1</button>
       <Boton texto="botonsin"/>
       <Boton texto="botonson"/>
     </div>
+
     <App />
   </>
 )
